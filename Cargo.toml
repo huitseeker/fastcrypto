@@ -6,3 +6,7 @@ members = [
     "fastcrypto-zkp"
 ]
 
+# patch mysten-util-mem as a PoC when using Once_cell
+[patch.'https://github.com/MystenLabs/mysten-infra']
+mysten-util-mem = { git = "https://github.com/huitseeker/mysten-infra/", rev = "4301d40" }
+
